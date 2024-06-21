@@ -1,198 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Storytelling</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e9ecef;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+<!DOCTYPE html><html><head>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async="" src="js/tex-svg.js">
+    </script>
+  <meta charset="utf-8">
 
-        .container {
-            max-width: 900px;
-            width: 100%;
-            margin: 20px;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+  <title>StorySynth</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-        .title {
-            text-align: center;
-            font-size: 3em;
-            color: #343a40;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
 
-        .authors {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 30px;
-        }
-
-        .author {
-            text-align: center;
-        }
-
-        .author img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            border: 2px solid #343a40;
-        }
-
-        .author-name {
-            font-size: 1.2em;
-            color: #343a40;
-            font-weight: bold;
-        }
-
-        .author-profession {
-            font-size: 1em;
-            color: #6c757d;
-        }
-
-        .about-project {
-            margin-bottom: 20px;
-        }
-
-        .about-project h2 {
-            font-size: 2em;
-            color: #343a40;
-            margin-bottom: 10px;
-        }
-
-        .about-project p {
-            font-size: 1em;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        .example-output {
-            margin-bottom: 20px;
-        }
-
-        .example-output h2 {
-            font-size: 2em;
-            color: #343a40;
-            margin-bottom: 10px;
-        }
-
-        .example-output img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-
-        .example-output p {
-            font-size: 1em;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .links {
-            text-align: center;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: #ffffff;
-            background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 5px;
-            display: inline-block;
-            transition: background-color 0.3s;
-            font-size: 1em;
-        }
-        .model-architecture {
-            margin-bottom: 20px;
-        }
-
-        .model-architecture h2 {
-            font-size: 2em;
-            color: #343a40;
-            margin-bottom: 10px;
-        }
-
-        .model-architecture img {
-            align-content: center;
-            width: 80%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-
-        .model-architecture p {
-            font-size: 1em;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .links a:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script defer="" src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Video Storytelling</div>
 
-        <div class="authors">
-            <div class="author">
-                <img src="https://www.csa.iisc.ac.in/newweb/wp-content/uploads/2019/11/faculty-chiru-4.jpg" alt="Author 1">
-                <div class="author-name">Prof.Chiranjib Bhattacharyya</div>
-                <div class="author-profession">Professor at IISc CSA</div>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><b>StorySynth : Generating Narratives from Pixels</b></h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.csa.iisc.ac.in/~chiru/" target="_blank">Prof.Chiranjib Bhattacharyya</a><sup></sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/bhargava75/" target="_blank">Bhargava Imandi</a><sup></sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.linkedin.com/in/mohit-soni22/" target="_blank">Mohit Soni</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><a href="https://mllab.csa.iisc.ac.in/"><span style="color: rgb(120,120,120); text-decoration: underline;">Machine Learning Lab</span></a>, <a href="https://www.iisc.ac.in/"><span style="color: rgb(120,120,120); text-decoration: underline;">IISc Bangalore</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Bhargava-75/video-storytelling" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              <!-- Demo link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/Bhargava75/video-storytelling" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span>
+                  <span>Hugging Face Demo</span>
+                </a>
+                </span>
+
+
             </div>
-            <div class="author">
-                <img src="https://www.csa.iisc.ac.in/newweb/wp-content/uploads/2022/12/Photo1.jpeg" alt="Author 2">
-                <div class="author-name">Bhargava Imandi</div>
-                <div class="author-profession">MTech CSA , IISc</div>
-            </div>
-            <div class="author">
-                <img src="https://www.csa.iisc.ac.in/newweb/wp-content/uploads/2022/12/ms1.jpeg" alt="Author 3">
-                <div class="author-name">Mohit Soni</div>
-                <div class="author-profession">MTech CSA , IISc</div>
-            </div>
+          </div>
         </div>
-        
-        
-        <div class="about-project">
-            <h2>About Video Storytelling</h2>
-            <p>Video storytelling is a cutting-edge method that transforms videos into captivating narratives by blending visual elements with natural language processing. Using advanced deep learning models and algorithms, it extracts key scenes, understands context, and creates engaging stories that resonate with audiences. </p>
-            <p> This innovative approach opens new avenues in entertainment, education, marketing, and beyond. To support research in this field, we've curated the Short Storytelling Video Dataset, containing 150 videos from diverse sources, each lasting 1 to 1.5 minutes, offering a valuable resource for exploring video storytelling techniques.</p>
-        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="model-architecture">
-            <h2>Model Architecture</h2>
-            <img src="Architecture.png"Model Architecture">
-            <p>This image represents the architecture of our model used in the video storytelling project. The model effectively processes the selected frames to generate compelling narratives.</p>
-        </div>
+</section>
 
-        <div class="example-output">
-            <h2>Example Output</h2>
-            <img src="Example.png" alt="Example Output">
-            <p>Here is an example of a generated story from selected video frames using our approach. The narratives produced are coherent, engaging, and contextually relevant, showcasing the effectiveness of our model in visual storytelling.</p>
-        </div>
 
-        <div class="links">
-            <a href="https://github.com/Bhargava-75/video-storytelling" target="_blank">GitHub</a>
-            <a href="https://huggingface.co/spaces/Bhargava75/video-storytelling" target="_blank">Hugging Face Demonstration</a>
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay="" controls="" muted="" loop="" class="small-video">
+        <!-- Your video here -->
+        <source src="media/Doggie.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Youtube Link : <a href = "https://www.youtube.com/watch?v=YLslsZuEaNE"> https://www.youtube.com/watch?v=YLslsZuEaNE </a>.
+      </h2>
+        <p class="subtitle"> <b>Story</b> : On a sunny afternoon, two dogs were playing on the green lawn.
+          They chased a ball happily, with their tails wagging.
+          One dog grabbed the ball while the other barked and tried to take it back.
+          They rolled around in the grass, playfully fighting over the ball.
+          Tired but happy, they lay down under a tree with the ball between them. 
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <br>
+          <p>
+            Explores into the developing fields of video storytelling. This field aims to produce coherent, imaginative, human-like, and clear narratives for videos, especially short ones a relatively unexplored area in current research. Video storytelling brings unique challenges, such as maintaining narrative consistency and handling the complexity of video content. In this work we employed different language models with combined global and local multi-head attention mechanisms to capture frame dependencies at various levels of detail. We tested our experiments on publicly available visual storytelling datasets as well as our own created datasets for video storytelling.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End paper abstract -->
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column ">
+        <h2 class="title is-3">StoryLLM</h2>
+        <div class="content has-text-justified">
+          <object data="images/Architecture.png" width="40%" style="display: block; margin: 0 auto;"> </object>
+          <br>
+          <p>
+           Leveraging the power of <b>PGL-SUM</b> architecture has proven instrumental in extracting optimal frames from video sequences.
+           By employing this framework, we efficiently identify key frames that encapsulate the essence of the visual content.
+           These frames are subsequently processed through a state-of-the-art pipeline combining Vision Transformers (ViT) and GPT-2 models for accurate image captioning.
+           Each frame's caption is meticulously generated, culminating in a comprehensive dataset of descriptive elements.
+           To synthesize a cohesive narrative from these diverse captions, we explore the capabilities of various Language Models (LLMs) such as <b>BART</b>, <b>T5</b>, and <b>LLama</b>.
+           Fine-tuned on a specialized video dataset, these LLMs integrate the individual captions into a coherent and engaging storyline, demonstrating the synergy between advanced machine learning techniques and multimedia content analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body has-text-centered">
+    <div class="container ">
+      <h2 class="title is-3">Qualitative Analysis</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <object data="images/Example1.png" width="100%"> </object>
+        </div>
+        <div class="item">
+        <object data="images/Example2.png" width="100%"> </object>
+      </div>
+      <div class="item">
+        <object data="images/Example3.png" width="100%"> </object>
+     </div>
+     <div class="item">
+      <object data="images/Example4.png" width="100%"> </object>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+        <div class="content">
+
+            <p>&copy; 2024 Machine Learning Lab , CSA Dept , Indian Institute of Science , Bangalore. All rights reserved.</p>
+
         </div>
     </div>
-</body>
-</html>
+  </div>
+</footer> 
 
+
+  
+  
+</body></html>
